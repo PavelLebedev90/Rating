@@ -8,12 +8,12 @@ export type valueType = 0 | 1 | 2 | 3 | 4 | 5
 function App() {
     const [value, setValue] = useState<valueType>(0)
     const chengeValue = (value: valueType) => {
-      setValue(value);
+        setValue(value);
     }
     return (
         <div className="App">
-            <Stars value = {value}
-                chengeValue = {chengeValue}
+            <Stars value={value}
+                   chengeValue={chengeValue}
             />
             <Form/>
         </div>
